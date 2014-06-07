@@ -4,3 +4,6 @@
   :x (/ (- (get area :w) (get area :x)) 2)
   :y (/ (- (get area :h) (get area :y)) 2)
 })
+(defn tileToSVG [tile]
+  (str "<rect x=\"" (get tile :x) "\"")
+)

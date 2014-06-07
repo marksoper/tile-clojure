@@ -5,13 +5,20 @@
     <title>Tile</title>
     <script type="text/javascript" src="out/goog/base.js"></script>
     <script type="text/javascript" src="tile.js"></script>
-    <script type="text/javascript">
-      goog.require('tile');
-    </script>
   </head>
   <body>
     <svg id="svg">
   
     </svg>
+    <script type="text/javascript">
+      goog.require('tile');
+      var app = {};
+      app.svg = document.getElementById("svg");
+      app.tileToRect = function(tile) {
+        var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("x", tile.x);
+        return rect;
+      };
+    </script>
   </body>
 </html>
