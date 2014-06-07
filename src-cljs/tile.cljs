@@ -1,8 +1,7 @@
 
 (ns tile)
 
-(ns tile
-  (require '[clojure.data.json :as json]))
+(require '[clojure.data.json :as json])
 
 (def area {:x 0 :y 0 :h 1000 :w 1000})
 (def tile {
